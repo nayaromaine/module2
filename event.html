@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Event</title>
+    <link rel="stylesheet" href="css/eventstyle.css">
+    <script src="js/eventscript.js"></script>
+</head>
+<body>
+    <div id="outer">
+        <form onsubmit="rawr()">
+            <label for="type" id="labeltype" class="labeltitle">Event Type:</label>
+            <select id="type" title="Enter event type">
+                <option value="null">Choose one</option>
+                <option value="wedding">Wedding</option>
+                <option value="party">Party</option>
+                <option value="reunion">Reunion</option>
+                <option value="training">Training</option>
+                <option value="symposium">Symposium</option>
+                <option value="conference">Conference</option>
+                <option value="festival">Festival</option>
+            </select><br><br>
+
+            <label for="title" id="labeltitle">Event Title:</label>
+            <textarea id="title" cols="50" rows="1" title="Enter event title"></textarea><br><br>
+
+            <label for="datestart" id="labeldates">Event Dates:</label>
+            <input type="date" id="datestart" title="Enter event start date" required>
+            to
+            <input type="date" id="dateend" title="Enter event end date" required>
+            <br><br>
+
+            <label for="posting" id="labelposting">Posting Date:</label>
+            <input type="date" id="posting" title="Enter posting date"><br><br><br>
+            
+            <input type="checkbox" id="box1">
+            <label for="box1">Is Registration Required?</label><br>
+            
+            <input type="checkbox" id="box2">
+            <label for="box2">Is this event associated with any Family Programs?</label><br>
+
+            <input type="checkbox" id="box3">
+            <label for="box3">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br>
+
+            <input type="checkbox" id="box4">
+            <label for="box4">Is there a Point of Contact?</label><br>
+
+            <input type="checkbox" id="box5">
+            <label for="box5">Is There a Hosting Command Point of Contact?</label><br>
+            
+            <br><br>
+            <p id="submission">
+                <input type="submit" id="submit" value="Send">
+                <input type="reset" id="cancel" value="Cancel">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
